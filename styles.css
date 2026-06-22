@@ -532,7 +532,7 @@ button {
 
 .cru-profile article {
   display: grid;
-  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 0.58fr);
+  grid-template-columns: minmax(300px, 0.48fr) minmax(0, 0.52fr);
   gap: clamp(22px, 5vw, 58px);
   align-items: center;
   min-height: 0;
@@ -561,10 +561,15 @@ button {
 }
 
 .barber-photo {
+  min-height: 520px;
+  background-color: #070707;
   background-image:
-    linear-gradient(180deg, rgba(8, 8, 8, 0.04), rgba(8, 8, 8, 0.54)),
+    linear-gradient(180deg, rgba(8, 8, 8, 0.02), rgba(8, 8, 8, 0.18)),
     url("upload-4f63c3f2267d781e332c0e2b50d3c4a5.png"),
     url("https://cdn-s.acuityscheduling.com/upload-4f63c3f2267d781e332c0e2b50d3c4a5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .gallery-section {
