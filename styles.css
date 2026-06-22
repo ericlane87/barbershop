@@ -23,6 +23,7 @@ html {
 
 body {
   margin: 0;
+  padding-bottom: 88px;
   background: var(--black);
   color: var(--ink);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -829,6 +830,10 @@ button {
 }
 
 @media (max-width: 760px) {
+  body {
+    padding-bottom: 104px;
+  }
+
   .site-header {
     min-height: 68px;
   }
