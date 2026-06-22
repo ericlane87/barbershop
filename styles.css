@@ -434,22 +434,6 @@ button {
     var(--charcoal);
 }
 
-.image-tile,
-.gallery-item,
-.contact-visual {
-  background-position: center;
-  background-size: cover;
-}
-
-.image-tile::before,
-.gallery-item::before,
-.contact-visual::before {
-  position: absolute;
-  inset: 0;
-  content: "";
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.08), rgba(8, 8, 8, 0.68));
-}
-
 .visual-tile::after,
 .gallery-item::after,
 .booking-visual::after {
@@ -459,8 +443,6 @@ button {
   border: 1px solid rgba(247, 242, 232, 0.12);
 }
 
-.visual-tile span,
-.gallery-item span,
 .booking-visual span {
   position: absolute;
   left: 16px;
@@ -495,33 +477,42 @@ button {
   grid-row: span 2;
 }
 
-.tile-two {
-  background-color: #1f2423;
-}
-
-.tile-three {
-  background-color: #241817;
-}
-
-.image-one {
+.image-one,
+.gallery-one {
   background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.16), rgba(11, 77, 69, 0.18)),
-    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.06) 0 1px, transparent 1px 14px),
-    #121211;
+    linear-gradient(135deg, rgba(216, 189, 130, 0.16), rgba(11, 77, 69, 0.16)),
+    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 14px),
+    #111;
 }
 
-.image-two {
+.image-two,
+.gallery-two {
   background:
-    linear-gradient(135deg, rgba(11, 77, 69, 0.2), rgba(216, 189, 130, 0.1)),
-    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 18px),
-    #101414;
+    linear-gradient(135deg, rgba(11, 77, 69, 0.22), rgba(216, 189, 130, 0.08)),
+    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 18px),
+    #0e1211;
 }
 
-.image-three {
+.image-three,
+.gallery-three {
   background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.1), rgba(247, 242, 232, 0.04)),
+    linear-gradient(135deg, rgba(216, 189, 130, 0.12), rgba(247, 242, 232, 0.04)),
     repeating-linear-gradient(135deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 16px),
-    #161211;
+    #15110f;
+}
+
+.gallery-four {
+  background:
+    linear-gradient(135deg, rgba(8, 8, 8, 0.08), rgba(216, 189, 130, 0.14)),
+    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 12px),
+    #111;
+}
+
+.gallery-five {
+  background:
+    linear-gradient(135deg, rgba(11, 77, 69, 0.2), rgba(8, 8, 8, 0.08)),
+    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 18px),
+    #101312;
 }
 
 .gallery-section {
@@ -543,41 +534,6 @@ button {
 
 .gallery-item.wide {
   grid-column: span 2;
-}
-
-.gallery-one {
-  background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.16), rgba(11, 77, 69, 0.16)),
-    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 14px),
-    #111;
-}
-
-.gallery-two {
-  background:
-    linear-gradient(135deg, rgba(11, 77, 69, 0.22), rgba(216, 189, 130, 0.08)),
-    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 18px),
-    #0e1211;
-}
-
-.gallery-three {
-  background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.12), rgba(247, 242, 232, 0.04)),
-    repeating-linear-gradient(135deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 16px),
-    #15110f;
-}
-
-.gallery-four {
-  background:
-    linear-gradient(135deg, rgba(8, 8, 8, 0.08), rgba(216, 189, 130, 0.14)),
-    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 12px),
-    #111;
-}
-
-.gallery-five {
-  background:
-    linear-gradient(135deg, rgba(11, 77, 69, 0.2), rgba(8, 8, 8, 0.08)),
-    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 18px),
-    #101312;
 }
 
 .booking-panel {
@@ -621,12 +577,6 @@ button {
 
 .booking-visual {
   min-height: 360px;
-  background:
-    linear-gradient(rgba(8, 8, 8, 0.22), rgba(8, 8, 8, 0.72)),
-    linear-gradient(90deg, transparent 49%, rgba(216, 189, 130, 0.14) 50%, transparent 51%),
-    linear-gradient(0deg, transparent 49%, rgba(11, 77, 69, 0.18) 50%, transparent 51%),
-    #171717;
-  background-size: auto, 92px 92px, 92px 92px, auto;
 }
 
 .contact-visual {
