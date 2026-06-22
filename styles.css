@@ -479,6 +479,24 @@ button {
   text-transform: uppercase;
 }
 
+.map-link {
+  position: absolute;
+  left: 16px;
+  bottom: 48px;
+  z-index: 1;
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border: 1px solid rgba(216, 189, 130, 0.54);
+  background: rgba(5, 5, 5, 0.7);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 900;
+  backdrop-filter: blur(12px);
+}
+
 .tile-one {
   grid-row: span 2;
 }
