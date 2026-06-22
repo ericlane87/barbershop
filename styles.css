@@ -547,6 +547,12 @@ button {
   line-height: 0.96;
 }
 
+.cru-profile p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
 .cru-profile a {
   display: inline-flex;
   margin-top: 24px;
