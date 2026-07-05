@@ -169,7 +169,7 @@ svg {
   background:
     linear-gradient(90deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.66) 42%, rgba(5, 5, 5, 0.5) 100%),
     linear-gradient(0deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.16) 48%, rgba(5, 5, 5, 0.62) 100%),
-    url("assets/work/adult-fade.jpeg");
+    url("https://raw.githubusercontent.com/ericlane87/barbershop/media/assets/work/adult-fade.jpeg");
   background-position: 68% 34%;
   background-size: cover;
   transform: scale(1.02);
