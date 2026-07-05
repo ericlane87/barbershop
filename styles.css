@@ -169,8 +169,8 @@ svg {
   background:
     linear-gradient(90deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.66) 42%, rgba(5, 5, 5, 0.5) 100%),
     linear-gradient(0deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.16) 48%, rgba(5, 5, 5, 0.62) 100%),
-    url("https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=2200&q=82");
-  background-position: center;
+    url("1298733F-5693-4B40-A319-FE0DDB9C7197.jpeg");
+  background-position: 68% 34%;
   background-size: cover;
   transform: scale(1.02);
 }
@@ -437,12 +437,11 @@ button {
 .visual-tile,
 .gallery-item {
   position: relative;
+  margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.13), rgba(11, 77, 69, 0.18)),
-    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 14px),
-    var(--charcoal);
+  background: var(--charcoal);
+  box-shadow: var(--shadow);
 }
 
 .visual-tile::after,
@@ -451,6 +450,88 @@ button {
   inset: 10px;
   content: "";
   border: 1px solid rgba(247, 242, 232, 0.12);
+  pointer-events: none;
+}
+
+.visual-tile img,
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+}
+
+.visual-tile img {
+  filter: saturate(0.92) contrast(1.04);
+}
+
+.gallery-item img {
+  filter: saturate(0.95) contrast(1.03) brightness(0.94);
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.gallery-item:hover img {
+  filter: saturate(1) contrast(1.06) brightness(1);
+  transform: scale(1.045);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 1;
+  max-width: calc(100% - 28px);
+  padding: 8px 10px;
+  border: 1px solid rgba(216, 189, 130, 0.42);
+  background: rgba(5, 5, 5, 0.68);
+  color: var(--ink);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+.tile-one {
+  grid-row: span 2;
+}
+
+.tile-one img {
+  object-position: 62% 32%;
+}
+
+.tile-two img {
+  object-position: 52% 32%;
+}
+
+.tile-three img {
+  object-position: 50% 34%;
+}
+
+.gallery-item:nth-child(1) img {
+  object-position: 62% 32%;
+}
+
+.gallery-item:nth-child(2) img {
+  object-position: 52% 30%;
+}
+
+.gallery-item:nth-child(3) img {
+  object-position: 48% 34%;
+}
+
+.gallery-item:nth-child(4) img {
+  object-position: 52% 38%;
+}
+
+.gallery-item:nth-child(5) img,
+.gallery-item:nth-child(6) img {
+  object-position: 50% 32%;
+}
+
+.gallery-item:nth-child(7) img {
+  object-position: 52% 18%;
 }
 
 .map-link {
@@ -469,48 +550,6 @@ button {
   font-size: 0.82rem;
   font-weight: 900;
   backdrop-filter: blur(12px);
-}
-
-.tile-one {
-  grid-row: span 2;
-}
-
-.image-one,
-.gallery-one {
-  background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.16), rgba(11, 77, 69, 0.16)),
-    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 14px),
-    #111;
-}
-
-.image-two,
-.gallery-two {
-  background:
-    linear-gradient(135deg, rgba(11, 77, 69, 0.22), rgba(216, 189, 130, 0.08)),
-    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 18px),
-    #0e1211;
-}
-
-.image-three,
-.gallery-three {
-  background:
-    linear-gradient(135deg, rgba(216, 189, 130, 0.12), rgba(247, 242, 232, 0.04)),
-    repeating-linear-gradient(135deg, rgba(247, 242, 232, 0.055) 0 1px, transparent 1px 16px),
-    #15110f;
-}
-
-.gallery-four {
-  background:
-    linear-gradient(135deg, rgba(8, 8, 8, 0.08), rgba(216, 189, 130, 0.14)),
-    repeating-linear-gradient(45deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 12px),
-    #111;
-}
-
-.gallery-five {
-  background:
-    linear-gradient(135deg, rgba(11, 77, 69, 0.2), rgba(8, 8, 8, 0.08)),
-    repeating-linear-gradient(90deg, rgba(247, 242, 232, 0.05) 0 1px, transparent 1px 18px),
-    #101312;
 }
 
 .gallery-section {
